@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+
+    <title>Bootstrap應用</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    
+    
+
+    <style>
+    
+    body {
+      
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide { 
+      display: flex;      
+      justify-content: center;      
+      align-items: center;
+    }
+
+    .navbar-brand img{
+      width: 130px;       
+      
+    }
+    .link-right{
+      margin: 0px 0px 0px 250px;
+    }
+
+
+    .banner-img, .main_img{
+        width: 100%;
+        position: relative;
+    }
+
+    .banner-text{
+      left: 80px;
+      position: absolute;
+    }
+
+    .banner-text .btn{
+      background-color: black;
+      color: white;
+    }
+
+    .header_cards, .btm_cards{
+        margin: 40px 0px;
+        
+    }
+
+    .card{
+      border: 0px ;
+    }
+    
+    .card-body .btn {
+      
+      color: #0067b8;
+      background-color: white;
+      
+    }
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a class="navbar-brand" href="#"><img src="./2.imag_mic/logo_mic.png" alt="Microsoft"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Office <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Windows </a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Surface </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Xbox </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">支援 </a>
+                    </li>
+ 
+                    <li class="link-right nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        所有Microsoft</a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">軟體</a>
+                        <a class="dropdown-item" href="#">Windows 應用程式</a>
+                        <a class="dropdown-item" href="#">OneDrive</a>
+                        <a class="dropdown-item" href="#">Outlook</a>
+                        <a class="dropdown-item" href="#">Skype</a>
+                        <a class="dropdown-item" href="#">OneNote</a>
+                      <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">其他</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="./2.imag_mic/seach.PNG" alt=""></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="./2.imag_mic/shoopingcar.PNG" alt=""></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><img src="./2.imag_mic/login.PNG" alt=""></a>
+                    </li>
+
+                  </ul>
+                </div>     
+        </nav>
+    </div>
+
+    <banner>
+          <div class="container">
+            <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="banner-img" src="./2.imag_mic/RE3NYN2 (1).webp" alt="">
+                        <div class="banner-text">
+                          <h5><b> 全新的 Surface Laptop 3</b></h5>
+                          <p> 每天使用完美筆記型電腦，數度比以往更快 </p>
+                          <a href="" class="btn banner-btn">立即選購 <b>＞</b></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="banner-img" src="./2.imag_mic/RE3NR20.webp" alt="">
+                        <div class="banner-text">
+                            <h5><b> 全新的 Surface Pro 7</b></h5>
+                            <p> 纖變萬化 </p>
+                            <a href="" class="btn banner-btn">立即選購 <b>＞</b></a>
+                        </div>
+                      </div>
+                   </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+            </div>  
+          </div>     
+    </banner>  
+    
+    <header>
+        
+        <div class="header_cards"> 
+            <div class="container">   
+                <div class="row">
+                     <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                        <img src="./2.imag_mic/RE3NYMU.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">全新的 Surface Pro X</h5>
+                          <p class="card-text">
+                                對 Pro 的大膽、創新之舉，以有史以來最薄的變形平板帶來時尚的設計和極致的行動力。</p>
+                          <a href="#" class="btn "> <b>深入了解 ＞</b> </a>
+                        </div>
+                      </div>
+                      <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                        <img src="./2.imag_mic/RWfbJT.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Surface Book 2</h5>
+                          <p class="card-text">
+                                極致筆記型電腦的超強效能。</p>
+                          <a href="#" class="btn "> <b>立即選購 ＞</b> </a>
+                        </div>
+                      </div>
+                      <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                        <img src="./2.imag_mic/RE37GsN.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">這是您的 365</h5>
+                          <p class="card-text">
+                                透過 Office 365 天天探索各種可能性。</p>
+                          <a href="#" class="btn "> <b>最多可供６人使用 ＞</b> </a>      
+                          <a href="#" class="btn "> <b> 適合1人適用＞</b></a>
+                        </div>
+                      </div>
+                      <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                        <img src="./2.imag_mic/Xbox.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Xbox Game Pass Ultimate</h5>
+                          <p class="card-text">
+                                Xbox Live Gold 和超過 100 款高品質的主機遊戲和電腦遊戲。 與好友同樂，並探索下一個最愛遊戲。</p>
+                          <a href="#" class="btn "> <b>立即選購 ＞</b> </a>
+                        </div>
+                      </div>
+                </div>
+              </div>
+          </div>
+    </header>
+    <main>
+        <div class="swiper-container">
+          <div class="container">
+             <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="main_img" src="./2.imag_mic/RE1AtDc.webp" alt="">
+                  <div class="banner-text">
+                      <h5><b>Xbox One S</b></h5>
+                      <p> 終極遊戲和 4K Ultra HD 娛樂系統。 </p>
+                      <a href="" class="btn banner-btn">了解更多 <b>＞</b></a>
+                  </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+             </div>  
+          </div>  
+        </div>            
+    </main>
+    <div class="btm_cards">
+        <div class="container">
+          <h5><b>適用於工作地點</b></h5>
+            <div class="row">
+                 <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                    <img src="./2.imag_mic/RE3NOni.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">認識 Surface Pro 7 商務版</h5>
+                      <p class="card-text">
+                            透過纖變萬化的經典變形平板，從筆記型電腦變成平板電腦或攜帶方便的工作室，以前所未有的方式一起合作。</p>
+                      <a href="#" class="btn btn-primary">深入了解</a>
+                    </div>
+                 </div>
+                 <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                    <img src=./2.imag_mic/RE2mheW.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">商務用 Office 365</h5>
+                      <p class="card-text">不論您是連線或離線，都可隨處存取您的檔案。</p>
+                      <a href="#" class="btn btn-primary">立即購買</a>
+                    </div>
+                 </div>
+                 <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                    <img src="./2.imag_mic/RE1CmIw.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"> Windows 10 企業版</h5>
+                      <p class="card-text">下載 IT 專業人員適用的 90 天免費評估版本。</p>
+                      <a href="#" class="btn btn-primary">立即下載</a>
+                    </div>
+                 </div>
+                 <div class="card col-xl-3 col-md-6 col-12" style="width: 18rem;">
+                    <img src="./2.imag_mic/RE4561D.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">在 Azure 中試用 AI</h5>
+                      <p class="card-text">透過您的 Azure 免費帳戶，使用 Azure 認知服務 (現在包括 12 個月 12 個免費服務) 來建置智慧應用程式。</p>
+                      <a href="#" class="btn btn-primary">免費開始</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    
+            var swiper = new Swiper ('.swiper-container', {
+              
+              centeredSlides: true,
+              autoplay: {
+              delay: 3500,
+              disableOnInteraction: false,
+              },
+              slidesPerView: 1,
+              spaceBetween: 30,
+              loop: true,  
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+          
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+          
+              // And if we need scrollbar
+              scrollbar: {
+                el: '.swiper-scrollbar',
+              },
+            });
+            </script>
+          
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+
+    
+    
+</body>
+</html>
